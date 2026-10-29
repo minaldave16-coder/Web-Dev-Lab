@@ -1,0 +1,308 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Movie Explorer</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <style>
+        body {
+            background: linear-gradient(90deg, #1CB5E0, #000851);
+            color: aliceblue;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #000851;
+        }
+
+        .navbar-brand {
+            color: #1CB5E0;
+            font-weight: bold;
+        }
+
+        .nav-link {
+            color: aliceblue;
+        }
+
+        .nav-link:hover {
+            color: #1CB5E0;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 60px 15px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            font-weight: bold;
+        }
+
+        .hero .btn {
+            background-color: #1CB5E0;
+            color: #000851;
+            font-weight: bold;
+        }
+
+        .filter {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .filter input {
+            display: none;
+        }
+
+        .filter label {
+            background-color: #000851;
+            color: aliceblue;
+            padding: 9px 16px;
+            margin: 4px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .filter label:hover {
+            background-color: #1CB5E0;
+            color: #000851;
+        }
+
+        .movie-card {
+            background-color: #000851;
+            color: aliceblue;
+            border: 1px solid #1CB5E0;
+            border-radius: 10px;
+            height: 100%;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        .movie-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 2px 5px 5px cyan;
+        }
+
+        .movie-card img {
+            width: 100%;
+            height: 280px;
+            object-fit: contain;
+            background-color: #050b27;
+            padding: 8px;
+        }
+
+        .movie-card .card-title {
+            color: #1CB5E0;
+            font-weight: bold;
+        }
+
+        .movie-card .btn {
+            background-color: #1CB5E0;
+            color: #000851;
+            font-weight: bold;
+        }
+
+        .rating {
+            color: #ffd700;
+        }
+
+        /* CSS-only genre filter */
+
+        #all:checked ~ .movie-list .movie-item {
+            display: block;
+        }
+
+        #scifi:checked ~ .movie-list .movie-item {
+            display: none;
+        }
+
+        #scifi:checked ~ .movie-list .movie-item.scifi {
+            display: block;
+        }
+
+        #action:checked ~ .movie-list .movie-item {
+            display: none;
+        }
+
+        #action:checked ~ .movie-list .movie-item.action {
+            display: block;
+        }
+
+        #drama:checked ~ .movie-list .movie-item {
+            display: none;
+        }
+
+        #drama:checked ~ .movie-list .movie-item.drama {
+            display: block;
+        }
+
+        .suggestion {
+            background-color: #000851;
+            text-align: center;
+            padding: 35px 15px;
+            margin-top: 50px;
+        }
+
+        footer {
+            background-color: #000851;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 30px;
+            }
+
+            .movie-card img {
+                height: 210px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">Movie Explorer</a>
+
+            <button class="navbar-toggler bg-light" type="button"
+                data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="homeB.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="sci-fiB.html">Sci-Fi</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="actionB.html">Action</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="formB.html">Suggest a Movie</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+
+            <h1>Every Film. A Different Universe.</h1>
+
+            <p>Discover stories, explore new worlds, and find your next favourite movie.</p>
+
+            <a href="#movies" class="btn btn-lg mt-3">Explore Collection</a>
+
+        </div>
+    </section>
+
+    <!-- Movies -->
+    <section class="container py-4" id="movies">
+
+        <h2 class="text-center fw-bold mb-4">Our Movie Collection</h2>
+
+        <div class="filter">
+
+            <input type="radio" name="genre" id="all" checked>
+            <label for="all">All Movies</label>
+
+            <input type="radio" name="genre" id="scifi">
+            <label for="scifi">Sci-Fi</label>
+
+            <input type="radio" name="genre" id="action">
+            <label for="action">Action</label>
+
+            <input type="radio" name="genre" id="drama">
+            <label for="drama">Drama</label>
+
+        </div>
+
+        <div class="row g-4 movie-list">
+
+            <!-- Oppenheimer -->
+            <div class="col-6 col-md-4 col-lg-3 movie-item drama">
+                <div class="card movie-card">
+                    <img src="https://www.hollywoodreporter.com/wp-content/uploads/2022/07/Oppenheimer-Movie-Poster-Universal-Publicity-EMBED-2022-.jpg?w=1000"
+                        alt="Oppenheimer poster">
+
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Oppenheimer</h5>
+                        <p>Release: 21 July 2023</p>
+                        <p class="rating">Rating: 4.8/5</p>
+                        <a href="Oppenheimer.html" class="btn mt-auto">Explore Movie</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interstellar -->
+            <div class="col-6 col-md-4 col-lg-3 movie-item scifi">
+                <div class="card movie-card">
+                    <img src="https://m.media-amazon.com/images/I/61Dqs77TXgL._AC_UF894,1000_QL80_.jpg"
+                        alt="Interstellar poster">
+
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Interstellar</h5>
+                        <p>Release: 7 November 2014</p>
+                        <p class="rating">Rating: 5/5</p>
+                        <a href="Interstellar.html" class="btn mt-auto">Explore Movie</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Hail Mary -->
+            <div class="col-6 col-md-4 col-lg-3 movie-item scifi">
+                <div class="card movie-card">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNTkwNzJiYTctNzI3NC00NjE1LTlhYjktY2Q5MTdmMWFmNzcxXkEyXkFqcGc@._V1_.jpg"
+                        alt="Project Hail Mary poster">
+
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Project Hail Mary</h5>
+                        <p>Release: 20 March 2026</p>
+                        <p class="rating">Rating: 5/5</p>
+                        <a href="ProjectHailMary.html" class="btn mt-auto">Explore Movie</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Suggestion -->
+    <section class="suggestion">
+        <div class="container">
+            <h2>Have a Movie in Mind?</h2>
+            <p>Help us make our collection even better!</p>
+            <a href="form.html" class="btn btn-outline-info">Suggest a Movie</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Minal Dave</p>
+        <p>Made for the love of cinema.</p>
+    </footer>
+
+</body>
+</html>

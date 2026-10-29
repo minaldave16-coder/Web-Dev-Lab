@@ -1,0 +1,295 @@
+<html>
+
+<head>
+    <title>Layout 2</title>
+    <style>
+        main {
+            width: 1100px;
+        }
+
+        .image1 {
+            display: flex;
+            float: left;
+        }
+
+        nav {
+            display: flex;
+            float: right;
+        }
+
+        nav a {
+            padding: 20px;
+        }
+
+        header {
+            height: 110px;
+            border-bottom: solid black 2px;
+        }
+
+        #groups {
+            margin-top: 10px;
+            padding-top: 0px;
+            background-color: crimson;
+            height: 550px;
+            width: 250px;
+            text-align: center;
+            float: left;
+        }
+
+        #sidebar,
+        #home,
+        #placement,
+        #recruitment,
+        #faculty,
+        #news {
+            border: yellow 1px solid;
+            height: 60px;
+            margin-bottom: 10px;
+        }
+
+        #sidebar {
+            height: 30px;
+        }
+
+        #main1 {
+            border: dotted black 1px;
+            margin-top: 30px;
+            margin-left: 260px;
+            padding: 10px;
+            height: 550px;
+        }
+
+        .images1 {
+            display: flex;
+        }
+
+
+        #image1 {
+            padding-left: 20px;
+        }
+
+        #image2 {
+            margin-left: 20px;
+        }
+
+        .info {
+            margin-top: 10px;
+
+        }
+
+        .images2 {
+            display: flex;
+            overflow-wrap: normal;
+        }
+
+        #image3 {
+            padding-top: 30px;
+            float: left;
+            padding-left: 20px;
+        }
+
+        #image4 {
+            padding-top: 30px;
+            margin-left: 20px;
+        }
+
+        #image5 {
+            padding-top: 30px;
+            margin-left: 20px;
+        }
+
+        #image6 {
+            padding-top: 30px;
+            margin-left: 20px;
+        }
+
+        #image7 {
+            padding-top: 30px;
+            margin-left: 20px;
+        }
+
+        footer {
+            background-color: crimson;
+            color: beige;
+            text-align: center;
+            width: 1100px;
+        }
+
+        @media (min-width: 480px) and (max-width: 860px) {
+
+                main {
+                    width: 100%;
+                }
+
+                footer {
+                    width: 100%;
+                }
+
+                section {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                #main1 {
+                    order: 1;
+                    margin-left: 0;
+                    width: 100%;
+                    box-sizing: border-box;
+                    height: auto;
+                }
+
+                #groups {
+                    order: 2;
+                    width: 100%;
+                    height: auto;
+                    float: none;
+                    margin-top: 20px;
+                    display: flex;
+                    flex-wrap: nowrap;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 10px 0;
+                }
+
+                #sidebar,
+                #home,
+                #placement,
+                #recruitment,
+                #faculty,
+                #news {
+                    height: 50px;
+                    flex: 1;
+                    margin: 5px 3px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    box-sizing: border-box;
+                    font-size: 13px;
+                    padding: 0 2px;
+                    text-align: center;
+                    background-color: lightcoral;
+                }
+
+                .images1 {
+                    display: block;
+                    overflow: hidden;
+                }
+
+                #image1,
+                #image2 {
+                    float: left;
+                    width: 45%;
+                    box-sizing: border-box;
+                    margin-left: 20px;
+                    text-align: center;
+                }
+
+                .images2 {
+                    display: block;
+                    overflow: hidden;
+                    overflow-wrap: normal;
+                }
+
+                #image3,
+                #image4,
+                #image5,
+                #image6 {
+                    float: left;
+                    width: 45%;
+                    box-sizing: border-box;
+                    padding-top: 30px;
+                    margin-left: 20px;
+                    text-align: center;
+                }
+
+                #image7 {
+                    float: none;
+                    clear: both;
+                    width: 100%;
+                    box-sizing: border-box;
+                    padding-top: 30px;
+                    text-align: center;
+                    margin-left: 0;
+                }
+        }
+    </style>
+</head>
+
+<body>
+    <main width="70">
+        <div class="container">Random Webpage</div>
+        <header>
+            <img src="https://getillustrations.com/blog/content/images/2025/10/Hipster-bible-to-illustrations.png"
+                height=100px width="100px" class="image1">
+            <nav>
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Contact</a>
+                <a href="">Login</a>
+            </nav>
+        </header>
+        <section>
+            <div id="groups">
+                <div id="sidebar"><a href="">Sidebar</a></div>
+                <div id="home"><a href="">Home</a></div>
+                <div id="placement"><a href="">Placement</a></div>
+                <div id="recruitment"><a href="">Recruitment</a></div>
+                <div id="faculty"><a href="">Faculty</a></div>
+                <div id="news"><a href="">News</a></div>
+            </div>
+            <div id="main1">
+                <div class="images1">
+                    <div id="image1"><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRohZ04ePOcvlsanZluLHy9I-qfMK6Rs703UpUwDU57Rw&s=10"
+                            height="130px" width="140px"></img>
+                        <div class="info">I am Dave Minal</div>
+                        <div>I am in 1st Sem</div>
+                    </div>
+                    <div id="image2"><img
+                            src="https://media.istockphoto.com/id/656990980/vector/cartoon-of-man-working-on-computer-overnight-and-drinkig-coffee.jpg?s=170667a&w=is&k=20&c=zlywINpoPArZBomtBaRWutIWl9vNHmCBqrQSVEh6iCI="
+                            height="130px"></img>
+
+                        <div class="info">This was me during layout2</div>
+                        <div>It was hard to figure out</div>
+                    </div>
+                </div>
+                <div class="images2">
+                    <div id="image3"><img
+                            src="https://png.pngtree.com/png-clipart/20240512/original/pngtree-female-entrepreneurs-are-tired-of-working-in-doodle-style-png-image_15068342.png"
+                            height="130px"></img>
+                        <div class="info">I am this</div>
+                        <div>This is me</div>
+                    </div>
+                    <div id="image4"><img
+                            src="https://thumbs.dreamstime.com/b/overworked-tired-office-worker-man-businessman-working-computer-coffee-infusion-vector-cartoon-stick-infussion-figure-215503327.jpg"
+                            height="130px"></img>
+                        <div class="info">You idk what to type now</div>
+                        <div> Hii Hello Hola senor</div>
+                    </div>
+
+                    <div id="image5"><img src="https://i.pinimg.com/736x/cc/f3/d9/ccf3d9f81c77e3d7992e445e17ae0b4c.jpg"
+                            height="130px"></img>
+                        <div class="info">I love WD</div>
+                        <div>I love CSS & HTML</div>
+                    </div>
+                    <div id="image6"><img
+                            src="https://thumbs.dreamstime.com/z/cartoon-stick-drawing-conceptual-illustration-angry-man-businessman-working-typing-laptop-notebook-computer-cartoon-125163472.jpg"
+                            height="130px"></img>
+                        <div class="info">I love Programming</div>
+                        <div>I love C And Python too</div>
+                    </div>
+                    <div id="image7"><img
+                            src="https://www.shutterstock.com/image-illustration/funny-tired-black-cat-doodle-260nw-2770566019.jpg"
+                            height="130px">
+                        <div class="info">I am cat</div>
+                        <div>I do meow^^</div>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <footer>
+        &copy; All Rights Reserved to Dave Minal
+    </footer>
+</body>
+
+</html>

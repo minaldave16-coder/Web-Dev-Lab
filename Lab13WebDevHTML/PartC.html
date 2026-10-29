@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1d2671, #c33764);
+            margin: 0;
+            padding: 40px;
+        }
+
+        .container {
+            width: 500px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1d2671;
+        }
+
+        p {
+            text-align: center;
+            color: gray;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 12px;
+            margin-top: 7px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            font-size: 15px;
+        }
+        input:focus,
+        select:focus {
+            border-color: #1d2671;
+            outline: none;
+            background-color: #f0f3ff;
+        }
+
+        input:valid {
+            border-color: green;
+        }
+
+        input:invalid {
+            border-color: red;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 25px;
+            padding: 13px;
+            border: none;
+            border-radius: 8px;
+            background-color: #1d2671;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:active {
+            background-color: #c33784;
+        }
+
+        button:hover {
+            background-color: #303f9f;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Student Registration</h1>
+        <p>Register for the upcoming college event</p>
+
+        <form>
+
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your name" required>
+
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email" required>
+
+            <label>Phone Number</label>
+            <input type="tel"
+                   placeholder="Enter 10-digit number"
+                   pattern="[0-9]{10}"
+                   required>
+
+            <label>Branch</label>
+            <select required>
+                <option value="">Select your branch</option>
+                <option>CSE</option>
+                <option>IT</option>
+                <option>ECE</option>
+                <option>Mechanical</option>
+            </select>
+
+            <button type="submit">Register Now</button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>

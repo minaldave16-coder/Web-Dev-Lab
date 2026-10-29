@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Random Form</title>
+    </head>
+    <body>
+        <table align = "center">
+            <form>
+                <tr>
+                    <td>
+                    <label for = "name">Enter your full name</label>
+                    </td>
+                    <td><input type = "text" id = "name" placeholder = "Enter your name " required minlength = "4"></td>
+                </tr>
+                <tr>
+                    <td>
+                    <label for = "email">Enter your email</label>
+                    </td>
+                    <td><input type = "email" id = "email" placeholder = "Enter your email "></td>
+                </tr>
+                <tr>
+                    <td>
+                    <label for = "mobile number">Enter your mobile number</label>
+                    </td>
+                    <td>
+                        <select>
+                            <option>+91</option>
+                            <option>+1</option>
+                            <option>+103</option>
+                            <option>+503</option>
+                        </select>
+                        <input type = "tel" id = "mobile number" pattern = "[0-9]{10}" required>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td>
+                    <label for = "date">Enter today's date</label>
+                    </td>
+                    <td><input type = "date"></td>
+                </tr>
+                <tr>
+                    <td>
+                    <label for = "address">Enter your Address</label>
+                    </td>
+                    <td><textarea rows = "10" cols = "10"></textarea></td>
+                </tr>
+               
+                <tr>
+                    <td>
+                    <label for = "age">Enter your age</label>
+                    </td>
+                    <td><input type = "number" required min = "18" max = "80"></td>
+                </tr>
+                 <tr>
+                    <td>
+                    <button type = "submit">Submit</button>
+                    </td>
+                </tr>
+            </form>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rating Form</title>
+
+    <style>
+        *{
+            font-size: larger;
+            margin-top: 50px;
+        }
+        body {
+            background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+            font-family: "Times New Roman";
+            font-size: 15px;
+            margin: 0;
+        }
+
+        h3 {
+            text-align: center;
+            padding: 10px;
+            margin: 0;
+            font-size:55px;
+        }
+
+        form {
+            background-color: aliceblue;
+            width: 1350px;
+            height: 1250px;
+            margin: 35px auto;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            border: 1px solid gray;
+            padding-left: 100px;
+            right: 0px;
+            font-size: larger;
+        }
+
+        table {
+            width: 100%;
+            border-spacing: 0 10px;
+        }
+
+        td:first-child {
+            width: 48%;
+            white-space: nowrap;
+        }
+
+        td:last-child {
+            width: 52%;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        input[list],
+        select,
+        textarea {
+            width: 520px;
+            height: 30px;
+            margin-bottom: -50px;
+            font-family: "Times New Roman";
+            font-size: 25px;
+            border: 1px solid gray;
+        }
+
+        textarea {
+            height: 70px;
+            resize: none;
+        }
+
+        input[type="radio"] {
+            margin-right: 4px;
+        }
+
+        .buttons {
+            text-align: center;
+            padding-top: 15px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 6px 18px;
+            font-family: "Times New Roman";
+            font-size: 25px;
+        }
+
+        input[type="submit"] {
+            background-color: skyblue;
+        }
+        button{
+            font-size: xx-large;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3>Rate Our Services and Suggest Improvements</h3>
+
+    <form>
+
+        <table>
+
+            <tr>
+                <td>First Name:</td>
+                <td>
+                    <input type="text"
+                           name="fname"
+                           placeholder="Enter first name"
+                           required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Last Name:</td>
+                <td>
+                    <input type="text"
+                           name="lname"
+                           placeholder="Enter last name"
+                           required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Email Address:</td>
+                <td>
+                    <input type="email"
+                           name="email"
+                           placeholder="Enter email"
+                           required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Rate Our Content:</td>
+                <td>
+                    <select name="rating" required>
+                        <option value="">Select Rating</option>
+                        <option>Excellent</option>
+                        <option>Good</option>
+                        <option>Average</option>
+                        <option>Poor</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Favourite Movie Genre:</td>
+                <td>
+                    <input list="genres"
+                           name="genre"
+                           placeholder="Choose genre">
+
+                    <datalist id="genres">
+                        <option value="Action">
+                        <option value="Science Fiction">
+                        <option value="Drama">
+                        <option value="Comedy">
+                        <option value="Thriller">
+                    </datalist>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Was Our Website Useful?</td>
+                <td>
+                    <input type="radio" name="useful" value="Yes" required> Yes
+                    <input type="radio" name="useful" value="No"> No
+                </td>
+            </tr>
+
+            <tr>
+                <td>How Did You Find Our Website?</td>
+                <td>
+                    <select name="source">
+                        <option>Search Engine</option>
+                        <option>Friend</option>
+                        <option>Social Media</option>
+                        <option>Other</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Date of Visit:</td>
+                <td>
+                    <input type="date" name="date" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Would You Recommend Our Website?</td>
+                <td>
+                    <input type="radio" name="recommend" value="Yes" required> Yes
+                    <input type="radio" name="recommend" value="No"> No
+                </td>
+            </tr>
+
+            <tr>
+                <td>Additional Suggestions:</td>
+                <td>
+                    <textarea name="suggestions"
+                              placeholder="Write your suggestions here"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" class="buttons">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+
+</body>
+</html>

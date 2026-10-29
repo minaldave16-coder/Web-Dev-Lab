@@ -1,0 +1,45 @@
+<html>
+    <body>
+        <title>HelloAnimation</title>
+    </body>
+    <style>
+        .box{
+            height:300px;
+            width:300px;
+            background-color: blue;
+            animation-name: move;
+            animation-duration: 6s;
+            position: relative;
+            animation-delay: 3s;
+            animation-iteration-count: infinite;animation-timing-function:linear;
+            animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+            animation-direction: reverse;
+            /* animation: name duration timing-function delay literation-count direction; -----> short hand property of animation*/
+        }
+        @keyframes move{
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                top: 0px;
+                left: calc(100% - 300px);
+            }
+            50%{
+                top: calc(100% - 300px);
+                left: calc(100% - 300px);
+            }
+            75%{
+                top: calc(100% - 300px);
+                left: 0px;
+            }
+            100%{
+                top: 0px;
+                left: 0px;
+            }
+        }
+    </style>
+    <body>
+        <div class = "box"></div>
+    </body>
+</html>

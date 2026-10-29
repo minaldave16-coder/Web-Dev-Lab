@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>Fun Animation</title>
+        <style>
+            body{
+                background-color: black;
+            }
+            div{
+                position: absolute;
+                height: 300px;
+                width: 300px;
+                background-color: white;
+                border-radius: 50%;
+                animation-name: screen;
+                animation-duration: 12s;
+                animation-iteration-count: infinite;
+            }
+            h2::after{
+                content: "hello";
+                position: absolute;
+                margin-top: 125px;
+                float: left;
+                font-size: larger;
+                height: 40px;
+                width: 300px;
+                color: white;
+                background-color: black;
+                animation-name: text;
+                animation-duration: 12s;
+                animation-iteration-count: infinite;
+                text-align: center;
+            }
+            @keyframes screen{
+                0%{
+                    top: 0px;
+                    left: 0px;
+                }
+                25%{
+                    top: calc(100% - 400px);
+                    left: 0;
+                }
+                50%{
+                    top: calc(50% - 200px);
+                    left: calc(50% - 200px);
+                }
+                75%{
+                    top: calc(100% - 400px);
+                    left: calc(100% - 400px);
+                }
+                100%{
+                    top: calc(400px - 100%);
+                    left: calc(100% - 400px);
+                }
+            }
+            @keyframes text{
+                0%{
+                    content: "h";
+                }
+                25%{
+                    content: "he";
+                }
+                50%{
+                    content: "hel";
+                }
+                75%{
+                    content: "hell";
+                }
+                100%{
+                    content: "hello";
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h2></h2>
+        </div>
+    </body>
+</html>

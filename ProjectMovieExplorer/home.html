@@ -1,0 +1,303 @@
+<html>
+
+<head>
+    <title>Movie Explorer</title>
+    <style>
+        body {
+            background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+            color:white;
+        }
+
+        .heading {
+            height: 50px;
+            color: midnightblue;
+            background-color: lightskyblue;
+        }
+
+        footer {
+            font-size: xx-large;
+        }
+
+        button {
+            font-size: xx-large;
+        }
+
+        b {
+            font-size: xx-large;
+        }
+
+        .l1 {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-evenly;
+            animation: movieRow 4.5s ease;
+        }
+
+        .l2 {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-evenly;
+            animation: movieRow 4.5s ease;
+        }
+
+        .l1 .images1 img {
+            transition: 0.3s;
+        }
+
+        .l1 .images1 img:hover {
+            transform: scale(1.25);
+            box-shadow: 0 0 18px 6px #00FFFF;
+        }
+
+        .l2 .images1 img {
+            transition: 0.3s;
+        }
+
+        .l2 .images1 img:hover {
+            transform: scale(1.25);
+            box-shadow: 0 0 18px 6px #00FFFF;
+        }
+
+        .box1 {
+            border-radius: 10px 10px 10px 10px;
+            margin: 50px;
+            background-color: midnightblue;
+            color: aliceblue;
+        }
+
+        .about {
+            font-size: xx-large;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .color {
+            background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+        }
+
+        .box2 {
+            background-color: midnightblue;
+            color: aliceblue;
+            border-radius: 10px 10px 10px 10px;
+            margin: 50px;
+        }
+
+        .box2 a,
+        .box1 a {
+            color: aliceblue;
+        }
+
+        .geners {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        @keyframes movieRow {
+            from {
+                opacity: 0;
+                margin-left: 100px;
+            }
+
+            to {
+                opacity: 1;
+                margin-left: 0;
+            }
+        }
+
+        @media (min-width: 850px) and (max-width: 1850px) {
+
+            .l1,
+            .l2 {
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+            }
+
+            .images1 {
+                width: 40%;
+                margin: 20px;
+            }
+
+            .images1 img {
+                width: 100%;
+                height: auto;
+            }
+
+            .images1 b {
+                font-size: large;
+            }
+
+            .about {
+                font-size: large;
+            }
+
+            .geners {
+                justify-content: space-evenly;
+            }
+
+            button {
+                font-size: large;
+            }
+
+            footer {
+                font-size: large;
+            }
+        }
+
+        @media (max-width: 849px) {
+
+            .l1,
+            .l2 {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .images1 {
+                width: 85%;
+                margin: 20px;
+            }
+
+            .images1 img {
+                width: 100%;
+                height: auto;
+            }
+
+            .images1 b {
+                font-size: medium;
+            }
+
+            .about {
+                font-size: medium;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .about pre {
+                white-space: pre-wrap;
+                width: 90%;
+            }
+
+            .geners {
+                width: 90%;
+                justify-content: space-evenly;
+            }
+
+            button {
+                font-size: medium;
+            }
+
+            footer {
+                font-size: medium;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="heading" align="center">
+            <h1>Movie Explorer Home Page</h1>
+        </div>
+        <div class="about">
+            <pre align="left">
+<p>Explore a collection of blockbuster movies, legendary stories,
+and unforgettable cinematic experiences.</p>
+Featured Movies
+<p>From superheroes and science to history and space, discover movies
+that have left their mark on the world of cinema.</p>
+Explore. Watch. Experience.
+<p>Click on any movie to discover its story, cast 
+and official trailer.</p>
+</pre>
+            <div class="geners">
+                <form>
+                    <button type="button" class="box1">
+                        <a href="./sci-fi.html" target="_blank">Sci-Fi</a>
+                    </button>
+                </form>
+                <form>
+                    <button type="submit" class="box2">
+                        <a href="./action.html" target="_blank">Action</a>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <section class="color">
+            <section class="l1">
+                <div class="images1">
+                    <a href="./SpiderManBrandNewDay.html" target="_blank">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOP7OLRwg5aq8Z0zTGCuZeTMUAq1qnIY_VKoDWTaulMQ&s=10"
+                            height="700px" width="500px" alt="Movie">
+                    </a>
+                    <div><b>Rating : ⁎⁎⁎⁎⁎</b></div>
+                    <div><b>Release Date: 31st July , 2026</b></div>
+                </div>
+                <div class="images1">
+                    <a href="./Oppenheimer.html" target="_blank">
+                        <img src="https://www.hollywoodreporter.com/wp-content/uploads/2022/07/Oppenheimer-Movie-Poster-Universal-Publicity-EMBED-2022-.jpg?w=1000"
+                            height="700px" width="500px" alt="Movie">
+                    </a>
+                    <div><b>Rating : ⁎⁎⁎⁎⁎</b></div>
+                    <div><b>Release Date: 21st July , 2023</b></div>
+                </div>
+                <div class="images1">
+                    <a href="./AvengersEndgame.html" target="_blank">
+                        <img src="https://rukminim2.flixcart.com/image/480/640/xif0q/poster/l/y/a/medium-avengers-endgame-movie-framed-poster-for-room-office-10-original-imahbabynmuvsqdb.jpeg?q=90"
+                            height="700px" width="500px" alt="Movie">
+                    </a>
+                    <div><b>Rating : ⁎⁎⁎⁎⁎</b></div>
+                    <div><b>Release Date: 19th April , 2019</b></div>
+                </div>
+                <div class="images1">
+                    <a href="./Interstellar.html" target="_blank">
+                        <img src="https://m.media-amazon.com/images/I/61Dqs77TXgL._AC_UF894,1000_QL80_.jpg"
+                            height="700px" width="500px" alt="Movie">
+                    </a>
+                    <div><b>Rating : ⁎⁎⁎⁎⁎</b></div>
+                    <div><b>Release Date: 7th November , 2014</b></div>
+                </div>
+            </section>
+            <section class="l2">
+                <div class="images1">
+                    <a href="./MultiverseOfMadness.html" target="_blank">
+                        <img src="https://m.media-amazon.com/images/M/MV5BN2YxZGRjMzYtZjE1ZC00MDI0LThjZmQtZTZmMzVmMmQ2NzBmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+                            height="700px" width="500px" alt="Movie">
+                    </a>
+                    <div><b>Rating : ⁎⁎⁎⁎⁎</b></div>
+                    <div><b>Release Date: 9th May , 2022</b></div>
+                </div>
+                <div class="images1">
+                    <a href="./TheDarkKnight.html" target="_blank">
+                        <img src="https://i.pinimg.com/736x/da/b4/9a/dab49ab9ff78d6ed004cf783c111a3b3.jpg"
+                            height="700px" width="500px" alt="Movie">
+                    </a>
+                    <div><b>Rating : ⁎⁎⁎⁎⁎</b></div>
+                    <div><b>Release Date:19th May , 2008</b></div>
+                </div>
+                <div class="images1">
+                    <a href="./ProjectHailMary.html" target="_blank">
+                        <img src="https://m.media-amazon.com/images/M/MV5BNTkwNzJiYTctNzI3NC00NjE1LTlhYjktY2Q5MTdmMWFmNzcxXkEyXkFqcGc@._V1_.jpg"
+                            height="700px" width="500px" alt="Movie">
+                    </a>
+                    <div><b>Rating : ⁎⁎⁎⁎⁎</b></div>
+                    <div><b>Release Date: 20th March , 2026</b></div>
+                </div>
+                <div class="images1">
+                    <a href="./AvengersInfinityWar.html" target="_blank">
+                        <img src="https://m.media-amazon.com/images/I/71eHZFw+GlL._AC_UF894,1000_QL80_.jpg"
+                            height="700px" width="500px" alt="Movie">
+                    </a>
+                    <div><b>Rating : ⁎⁎⁎⁎⁎</b></div>
+                    <div><b>Release Date: 17th April , 2018</b></div>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer>
+        Rate our work on the below form
+        <a href="./form.html" target="_blank"> Click here to fill the form.</a><br>
+
+        &copy;All Rights Reserved to Dave Minal
+    </footer>
+</body>
+
+</html>

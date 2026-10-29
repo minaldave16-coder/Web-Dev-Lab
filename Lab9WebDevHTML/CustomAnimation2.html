@@ -1,0 +1,109 @@
+<html>
+
+<head>
+    <title>Custom Animation2</title>
+    <style>
+        .title {
+            font-size: xx-large;
+            color: navy;
+            margin-left: 1300px;
+        }
+
+        #img1 {
+            border-radius: 80%;
+            animation-name: sun;
+            animation-duration: 30s;
+            position: relative;
+            animation-iteration-count: infinite;
+        }
+
+        #img2 {
+            border-radius: 80%;
+            animation-name: moon;
+            animation-duration: 30s;
+            position: relative;
+            margin-bottom: 100px;
+            animation-iteration-count: infinite;
+        }
+
+        .l1{
+            font-size: xx-large;
+            color: crimson;
+            padding-left: 500px;
+        }
+        .l2{
+            font-size: xx-large;
+            color: crimson;
+            padding-left: 500px;
+        }
+        .l3{
+            font-size: xx-large;
+            color: crimson;
+            padding-left: 400px;
+        }
+        .l4{
+            font-size: xx-large;
+            color: crimson;
+            padding-left: 300px;
+        }
+
+        @keyframes sun {
+            0% {
+                top: 20%;
+                left: 0%;
+            }
+            100% {
+                top: 20%;
+                left: calc(1700px - 30%);
+            }
+        }
+
+        @keyframes moon {
+            0% {
+                top: 0%;
+                left: 100%;
+            }
+            50%{
+                top: 0%;
+                left:-30%;
+            }
+            100% {
+                top: 0%;
+                left: -100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title">
+        <h1>Solar Eclipse</h1>
+    </div>
+    <div class="images">
+        <img id="img1"
+            src="https://st2.depositphotos.com/8376662/47420/i/1600/depositphotos_474208616-stock-photo-star-sun-isolated-white-background.jpg"
+            height="1200px" width="1700px">
+        <img id="img2"
+            src="https://static.vecteezy.com/system/resources/previews/067/800/373/non_2x/image-shows-detailed-view-of-full-moon-with-visible-craters-and-surface-textures-set-against-transparency-background-moon-appears-bright-and-luminous-showcasing-its-natural-beauty-png.png"
+            height="1100px" width="1100px">
+    </div>
+    </div>
+    <div class="Information">
+        <div class="l1"><b>A solar eclipse occurs when the Moon moves directly between Earth and the Sun, blocking all or a
+            portion of the Sun's light from reaching our planet</b></div>
+        <div class="l2"><b> 1. The Core MechanicsAlignment</b>: Happens strictly during a new moon phase when the Sun,
+            Moon, and Earth align in a straight line (known as syzygy).</div>
+        <div class="l3"><b>The Cosmic Coincidence</b>: The Sun's diameter is about 400 times wider than the Moon, but
+            the Sun is also roughly 400 times farther away from Earth. This makes both celestial bodies appear nearly
+            identical in size from our sky.</div>
+        <div class="l4"><b>Orbital Tilt</b>: The Moon's orbit is tilted at a 5-degree angle relative to Earth's orbital
+            plane around the Sun.Because of this tilt, shadows usually pass above or below Earth, which is why eclipses
+            do not occur every single month.</div>
+    </div>
+    <div class = "image2">
+        <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLlppB6kOQZYEmJtLqGEaJnBkct3gj1toMPLAFyDx_VH4j-dFguhSnePo&s=10" height = "900px" width = "1400px">
+        <img src = "https://communications.oregonstate.edu/sites/communications.oregonstate.edu/files/solar_eclipse.png">
+    </div>
+</body>
+
+</html>

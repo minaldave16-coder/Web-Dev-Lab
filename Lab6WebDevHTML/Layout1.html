@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>Layout1</title>
+        <style>
+            .container{
+                background-color: aqua;
+                padding: 10px;
+                width: 1100px;
+            }
+            main{
+                background-color: purple;
+                width: 1100px
+            }
+            .groups{
+                display: flex;
+                justify-content: space-evenly;
+            }
+            section{
+                background-color: yellow;
+                /* display : flex;
+                justify-content: space-evenly; */
+                height: 300px;
+                width: 1100px;
+            }
+            .entry{
+                margin-top: 10px;
+                background-color: black;
+                color: white;
+                padding-bottom: 10px;
+                margin-bottom: 10px;
+                margin-left: 20px;
+                width: 500px;
+                
+            }
+            .sidebar{
+                background-color: black;
+                color: white;
+                padding: 10px;
+                width: 500px;
+                height: 100px;
+                margin-top: 10px;
+            }
+            footer{
+                background-color: blue;
+                color: white;
+                width: 1100;
+            }
+            header{
+                color: white;
+            }
+            @media (max-width: 700px){
+                .groups{
+                    flex-direction: column;
+                }
+            }
+            
+        </style>
+
+    </head>
+    <body>
+        <div class = "container">Page
+        <main>
+            <header>Header</header>
+            <section>Content
+                <div class = "groups">
+                <div class = "entries">
+                    <div class = "entry">Entry</div>
+                    <div class = "entry">Entry</div>
+                    <div class = "entry">Entry</div>
+                </div>
+                
+                <div class = "sidebar">Sidebar</div>
+                </div>
+            </section>
+            <footer>
+            &copy;Darshan University , Rajkot
+        </footer>
+        </main>
+        </div>
+    </body>
+</html>

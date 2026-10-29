@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>IconFun</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <style>
+        * {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: grey;
+        }
+
+        nav {
+            height: 60px;
+            background-color: black;
+            color: azure;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 30px;
+        }
+
+        .logo {
+            font-size: 25px;
+        }
+
+        .logo i {
+            margin-right: 8px;
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav-right a {
+            color: azure;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .nav-right i {
+            font-size: 18px;
+        }
+
+        .download {
+            background-color: rgb(4, 107, 107);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin: 0;
+        }
+
+        .header {
+            position: relative;
+        }
+
+        .header img {
+            display: block;
+        }
+
+        .header p {
+            position: absolute;
+            color: azure;
+            font-size: 60px;
+            top: 30px;
+            left: 70%;
+        }
+
+        .container {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .event1,.event2,.event3,.event4 {
+            width: 300px;
+        }
+
+        .event1 img, .event2 img, .event3 img, .event4 img {
+            display: block;
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .eventHolder {
+            background-color: white;
+            width: 300px;
+            height: 300px;
+            padding: 10px;
+            flex-direction: column;
+            align-content: space-between;
+        }
+
+        .eventHolder .date {
+            color: grey;
+            margin: 0;
+        }
+
+        .eventHolder h1 {
+            margin: 10px 0;
+        }
+
+        button {
+            color: aliceblue;
+            background-color: rgb(4, 107, 107);
+            border: none;
+            padding: 8px 15px;
+            border-radius: 10px;
+            margin-left: 35%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="logo">
+            <i class="fa-solid fa-guitar"></i>
+            SoundAMP
+        </div>
+
+        <div class="nav-right">
+
+            <a href="#">HTML Templates</a>
+            <a href="#">More HTML Templates</a>
+
+            <button class="download">
+                DOWNLOAD NOW
+            </button>
+
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+
+        </div>
+
+    </nav>
+
+    <div class="header">
+
+        <img src="https://getwallpapers.com/wallpaper/full/b/e/b/331084.jpg"
+            width="100%" height="200px">
+
+        <p>ALL EVENTS</p>
+
+    </div>
+
+
+    <!-- Events -->
+
+    <div class="container">
+
+
+        <!-- Event 1 -->
+
+        <div class="event1">
+
+            <img src="https://as1.ftcdn.net/jpg/08/58/94/28/220_F_858942811_w0ZfLUGHexrguGWCirxomrIws0wWgkne.jpg"
+                alt="Night Laser Show">
+
+            <div class="eventHolder">
+
+                <p class="date">10 / 08 / 2026</p>
+
+                <h1>Night Laser Show</h1>
+
+                #hiphop #fun <br>
+                #music <br>
+
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+
+                <br><br>
+
+                <button type="button">
+                    See More...
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Event 2 -->
+
+        <div class="event2">
+
+            <img src="https://www.tourismvernon.com/sites/default/files/styles/scale_1440/public/2023-11/riot-on-the-roof-9342-sm.jpg?itok=SnRe0yUJ"
+                alt="Music Event">
+
+            <div class="eventHolder">
+
+                <p class="date">10 / 08 / 2026</p>
+
+                <h1>Night Laser Show</h1>
+
+                #hiphop #fun <br>
+                #music <br>
+
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+
+                <br><br>
+
+                <button type="button">
+                    See More...
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Event 3 -->
+
+        <div class="event3">
+
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/026/432/368/small/dark-music-background-with-playing-dj-photo.jpg"
+                alt="DJ Event">
+
+            <div class="eventHolder">
+
+                <p class="date">10 / 08 / 2026</p>
+
+                <h1>Night Laser Show</h1>
+
+                #hiphop #fun <br>
+                #music <br>
+
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+
+                <br><br>
+
+                <button type="button">
+                    See More...
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Event 4 -->
+
+        <div class="event4">
+
+            <img src="https://www.trendingus.com/wp-content/uploads/2026/06/10-Best-Beaches-in-Goa-for-Nightlife-Clubs-Shacks-and-Party-Tips.webp"
+                alt="Beach Event">
+
+            <div class="eventHolder">
+
+                <p class="date">10 / 08 / 2026</p>
+
+                <h1>Night Laser Show</h1>
+
+                #hiphop #fun <br>
+                #music <br>
+
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+
+                <br><br>
+
+                <button type="button">
+                    See More...
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

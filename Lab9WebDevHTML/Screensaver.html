@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>ScreenSaver</title>
+        <style>
+            body{
+                background-color: black;
+            }
+            img{
+                position: absolute;
+                animation-name: screensaver;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+
+            }
+            @keyframes screensaver{
+                0%{
+                    top: 0px;
+                    left: 0px;
+                }
+                16.67%{
+                    top: calc(100% - 500px);
+                    left: 0;
+                }
+                33.34%{
+                    top: 0;
+                    left: calc(50% - 400px);
+                }
+                50.01%{
+                    top: calc(100% - 500px);
+                    left: calc(100% - 400px);
+                }
+                66.68%{
+                    top: 0px;
+                    left: calc(100% - 400px);
+                }
+                83.33%{
+                   top: calc(100% - 500px);
+                   left: calc(50% - 400px);
+                }
+                100%{
+                    top: 0px;
+                    left: 0px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <img src = "https://img.pikbest.com/origin/10/43/32/04NpIkbEsTbB6.png!w700wp" height = "500px" width ="400px">
+    </body>
+</html>

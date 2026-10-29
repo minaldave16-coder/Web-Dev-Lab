@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IGNITE 2026 - Technical Events</title>
+    <style>
+        body {
+            background-image: linear-gradient(to top, #09203f 0%, #033861 100%);
+            color: azure;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 10px;
+        }
+
+        header img {
+            border-radius: 50%;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        header a {
+            color: azure;
+            padding: 20px;
+        }
+        a{
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: lightblue;
+            color: #033861;
+        }
+
+        .register-button {
+            height: 35px;
+            width: 150px;
+            background-image: linear-gradient(to right, #054064, #070999, #274f68);
+            border-radius: 10px;
+        }
+
+        .register-button a {
+            padding: 8px;
+            display: block;
+        }
+
+        .title {
+            text-align: center;
+        }
+
+        .title h2 {
+            font-size: 35px;
+        }
+
+        .event {
+            max-width: 850px;
+            margin: 35px auto;
+            padding: 25px;
+            border-radius: 15px;
+            background-image: linear-gradient(to bottom right, #123d5c, #182c50);
+            border: white 2px solid;
+        }
+        .event:hover{
+            transition: 1s;
+            transform: scale(1.05);
+            box-shadow: 0px 5px 15px aliceblue;
+        }
+
+        .event h3 {
+            font-size: 24px;
+        }
+
+        .event li {
+            margin: 10px;
+        }
+
+        .register {
+            text-align: center;
+            margin: 40px;
+        }
+
+        .register a {
+            background-color: #274f68;
+            color: azure;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: azure;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+                <img src="https://lens.usercontent.google.com/banana?agsi=CmdnbG9iYWw6OjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAwZWI6MTowY2NhMWVmMmMwYWMxMzhhOjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAyZTFhNzEwMzM2ODowMDA2NWI4NGIwNzk1MDlmEAIYASIKaW1hZ2UvanBlZw==" height = "100px" width = "100px">
+        <h1>IGNITE 2026</h1>
+        <nav>
+            <a href="./home.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./contact.html">Contact</a>
+            <a href="./events.html">Events</a>
+            <a href="./schedule.html">Schedule</a>
+            <button class="register-button">
+                <a href="./register.html">Register</a>
+            </button>
+        </nav>
+    </header>
+    <main>
+        <section class="title">
+            <h2>💻 Technical Events</h2>
+            <p>
+                Rules and regulations for all technical competitions.
+            </p>
+        </section>
+        <section class="event">
+            <h3>🌐 Web Design</h3>
+            <ul>
+                <li>Participants must create a website within the given time.</li>
+                <li>HTML and CSS may be used for the competition.</li>
+                <li>The website must be responsive.</li>
+                <li>Participants must follow the given theme or problem statement.</li>
+                <li>Pre-made website templates should not be used.</li>
+                <li>The final website must be submitted before the deadline.</li>
+            </ul>
+        </section>
+        <section class="event">
+            <h3>💻 Coding Challenge</h3>
+            <ul>
+                <li>Participants must solve the given programming problems.</li>
+                <li>Problems will test programming and logical thinking.</li>
+                <li>Participants must use the programming language specified by the organizers.</li>
+                <li>Each problem must be completed within the allotted time.</li>
+                <li>Solutions will be evaluated using test cases.</li>
+            </ul>
+        </section>
+        <section class="event">
+            <h3>🤖 Robotics Challenge</h3>
+            <ul>
+                <li>Teams must complete the assigned robotics challenge.</li>
+                <li>Participants must follow all laboratory and equipment safety rules.</li>
+                <li>Only permitted components and equipment may be used.</li>
+                <li>Teams must complete the challenge within the given time.</li>
+                <li>Judging will consider functionality, accuracy, and innovation.</li>
+            </ul>
+        </section>
+        <section class="event">
+            <h3>🧠 Tech Quiz</h3>
+            <ul>
+                <li>The quiz will consist of multiple rounds.</li>
+                <li>Questions may cover computers, technology, science, and innovation.</li>
+                <li>Each question will have a fixed time limit.</li>
+                <li>Use of electronic devices may be prohibited during the quiz.</li>
+                <li>The decision of the quiz coordinators will be final.</li>
+            </ul>
+        </section>
+        <div class="register">
+            <a href="./register.html">
+                Register for a Technical Event
+            </a>
+        </div>
+    </main>
+    <footer>
+        Contact us on
+        <a href="./contact.html">Contact Info</a>
+        <br>
+        &copy; All Rights Reserved to Dave Minal
+    </footer>
+</body>
+
+</html>
